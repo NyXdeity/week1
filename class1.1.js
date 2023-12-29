@@ -125,22 +125,6 @@
 // console.log(user1["firstName"]);// to get an specific thing in the object  //output: Prince 
 // console.log(user1["gender"]);//output: male
 
-//*not workig need to review:-
-//this is an ex of how to access an nested value of an object
-const nestedObject =[{
-    firstName:"prince",
-    gender:"male",
-    metaData: {
-        age: 18,
-        address:"udaipur",
-        favPerson:"abhishek soni",
-        favDessert:"lava cake"
-    }
-}]
-for(let i=0; i<nestedObject.length;i++){
-    console.log(nestedObject["metaData"["age"]]);
-}
-//
 /*
 const allUser =[{//to make arrays of objects
     firstName:"Prince",
@@ -165,9 +149,37 @@ for(let i=0; i<allUser.length;i++){
     if(allUser[i]["gender"]=="male")
     console.log(allUser[i]["firstName"]);
 }
+//[1,2,3,4,5] arr[i]
+// [{[{}]}] => arr[i]["gender"]
 
 */
 
-
 //functions
+
+// function Sum(a,b){//in this code the thread will go in this order line=> 159>164>161>162>165 
+//     //goal of a f(x): do things with input and return an output
+//     const valueSum = a + b;
+//     return valueSum;
+// }
+// const value = Sum(1,2)//here when we call "Sum" only then will the function executes
+// console.log(value);
+
+//functions can take another functions as input:-
+// const cl = console.log.bind(console);
+// cl("hello");
+
+// function sum(a,b) {
+//     let result = a + b;
+//     return result;
+// }
+// function displayResult(data) {
+//     console.log("Result of the Sum is :" + data);
+// }
+// function displayResultPassive(data) {
+//     console.log("Sum's result is :" + data);
+// }
+// // are only allowed to call one function after this
+// // how will you displayResult of sum
+// const ans = sum(1,2);
+// displayResult(ans);
 

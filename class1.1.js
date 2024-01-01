@@ -168,18 +168,18 @@ for(let i=0; i<allUser.length;i++){
 // const cl = console.log.bind(console);
 // cl("hello");
 
-// function sum(a,b) {
-//     let result = a + b;
-//     return result;
-// }
-// function displayResult(data) {
-//     console.log("Result of the Sum is :" + data);
-// }
-// function displayResultPassive(data) {
-//     console.log("Sum's result is :" + data);
-// }
-// // are only allowed to call one function after this
-// // how will you displayResult of sum
-// const ans = sum(1,2);
-// displayResult(ans);
-
+function sum(a,b) {
+    let result = a + b;
+    
+    return result;
+}
+function displayResult(data) {
+    console.log("Result of the Sum is :" + data);
+}
+function displayResultPassive(data) {
+    console.log("Sum's result is :" + data);
+}
+// are only allowed to call one function after this
+// how will you displayResult of sum
+const ans = sum(1,2);
+displayResult(ans);

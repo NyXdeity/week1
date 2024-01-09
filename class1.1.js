@@ -170,7 +170,6 @@ for(let i=0; i<allUser.length;i++){
 
 function sum(a,b) {
     let result = a + b;
-    
     return result;
 }
 function displayResult(data) {
@@ -181,5 +180,6 @@ function displayResultPassive(data) {
 }
 // are only allowed to call one function after this
 // how will you displayResult of sum
+// you are not allowed to change the code ABOVE only change the code below
 const ans = sum(1,2);
 displayResult(ans);

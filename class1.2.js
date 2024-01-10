@@ -168,18 +168,77 @@ for(let i=0; i<allUser.length;i++){
 // const cl = console.log.bind(console);
 // cl("hello");
 
-function sum(a,b) {
-    let result = a + b;
-    return result;
-}
-function displayResult(data) {
-    console.log("Result of the Sum is :" + data);
-}
-function displayResultPassive(data) {
-    console.log("Sum's result is :" + data);
-}
-// are only allowed to call one function after this
-// how will you displayResult of sum
-// you are not allowed to change the code ABOVE only change the code below
-const ans = sum(1,2);
-displayResult(ans);
+// function sum(a,b, fnToCall) {//fnToCall=> displayResult
+//     let result = a + b;
+//     fnToCall(result);
+// }
+// function displayResult(data) {
+//     console.log("Result of the Sum is :" + data);
+// }
+// function displayResultPassive(data) {
+//     console.log("Sum's result is :" + data);
+// }
+/*  are only allowed to call one function after this
+    how will you displayResult of sum
+    you are not allowed to change the code ABOVE only change the code below
+*/ 
+
+
+// const ans = sum(1,2,displayResult);//displayResult will go to fnToCall:- by doing this we're essentially givving fun an value which is another fnc.
+// // callbacks ^^^
+
+
+//calculator:-
+
+
+// function ArithmeticCalculator(a, b, type){//without using the callback func:-
+//     if( type == "sum"){
+//         return a+b;
+//     }
+//     if(type == "minus"){
+//         return a-b;
+//     }
+//     if(type == "multiply"){
+//         return a*b;
+//     }
+//     if(type == "divide"){
+//         return a/b;
+//     }
+//     if(type == "modulus"){
+//         return a%b;
+//     }
+// }
+// const value = ArithmeticCalculator(2,2,"modulus");
+// console.log(value);
+
+// // using the callback func:- this is an very important exaample as this teaches the use case of an callback func
+// function calculator(a, b, arithmeticFunc){
+   
+//     const ans = arithmeticFunc(a,b)
+//     return ans;
+// }
+
+// function sum(a,b) {
+//     return a+b;
+// }
+
+// function minus(a,b) {
+//     return a-b;
+// }
+
+// function multiply(a,b) {
+//     return a*b;
+// }
+
+// function divide(a,b) {
+//     return a/b;
+// }
+
+// const value = calculator(1,2,divide);
+// console.log(value);
+
+
+// function greet() {//setTime out function 
+//     console.log("hello, world:");
+// }
+// setTimeout( greet , 3*1000)

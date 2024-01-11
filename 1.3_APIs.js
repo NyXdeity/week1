@@ -40,12 +40,64 @@ getLength("new message");
  findLastIndexOf("hello world world", "world");// output: 12
 */
 
-// slice
-function getSlice(str, start, end) {
+/* 4) slice
+  function getSlice(str, start, end) {
     console.log("Original String:", str);
     console.log("After slice:", str.slice(start, end));
   }
-  getSlice("Hello World", 0, 5);
+  getSlice("Hello World", 0, 5);//it'll show the elements 0,1,2,3,4
+
+  const str = "hello,World";// working at a low level this is how it's done
+  console.log(str.slice(0,5));
 
 
+
+*/
+
+/* 5) substring
+ function getSubstring(str, start, end) {
+    console.log("Original String:", str);
+    console.log("After substring:", str.substring(start, end));
+  }
+  getSubstring("Hello World", 2, 4);
+
+  const str = "hello,world";// at a low level this is how it's done 
+  console.log(str.substring(2,6))
+*/  
+
+/* 6) replace
+function replaceString(str,target,replacement){
+    console.log("original string:", str);
+    console.log("After replacement :", str.replace(target,replacement));
+}
+
+replaceString("Hello, World", "World", "javascript");
+
+var str = "hello , world ";//at a low level this is how it's done:-
+console.log(str.replace("world","javascript"));
+*/
+
+/* 7) split
+ //Turns a string into array based on a delimiter
+ //this is an intersting and useful tool.
+ function splitString(str, separator) {
+    console.log("original string:",str);
+    console.log("After split:",str.split(separator));
+ }
+ splitString("Hello , World", " ");// output:[ 'Hello', ',', 'World' ] here the delimiter is spcae(" ").
  
+ const str = "hello , world , my name is prince";// at a low level this is how it's done
+ console.log(str.split(","));//[ 'hello ', ' world ', ' my name is prince' ]
+
+*/
+
+
+
+
+
+
+
+
+
+
+

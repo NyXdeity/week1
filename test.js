@@ -45,3 +45,5 @@ function displayResultPassive(data){
 }
 
 const ans = sum(12,34,displayResultPassive);
+
+

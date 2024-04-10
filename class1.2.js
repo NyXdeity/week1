@@ -191,25 +191,25 @@ for(let i=0; i<allUser.length;i++){
 //calculator:-
 
 
-function ArithmeticCalculator(a, b, type){//without using the callback func:-
-    if( type == "sum"){
-        return a+b;
-    }
-    if(type == "minus"){
-        return a-b;
-    }
-    if(type == "multiply"){
-        return a*b;
-    }
-    if(type == "divide"){
-        return a/b;
-    }
-    if(type == "modulus"){
-        return a%b;
-    }
-}
-const value = ArithmeticCalculator(2,2,"modulus");
-console.log(value);
+// function ArithmeticCalculator(a, b, type){//without using the callback func:-
+//     if( type == "sum"){
+//         return a+b;
+//     }
+//     if(type == "minus"){
+//         return a-b;
+//     }
+//     if(type == "multiply"){
+//         return a*b;
+//     }
+//     if(type == "divide"){
+//         return a/b;
+//     }
+//     if(type == "modulus"){
+//         return a%b;
+//     }
+// }
+// const value = ArithmeticCalculator(2,2,"modulus");
+// console.log(value);
 
 // // using the callback func:- this is an very important exaample as this teaches the use case of an callback func
 // function calculator(a, b, arithmeticFunc){

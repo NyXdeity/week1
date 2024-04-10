@@ -1,5 +1,15 @@
-//strings :-
+//level 1=>01-strings=>02-numbers=>03-Arrays
 
+//**01-Strings :-
+
+// String handbook
+
+// String: , indexOf(), lastIndexOf(), slice(), substring(), replace(),
+// split(), trim(), toUpperCase(), toLowerCase(), etc.
+
+/*important:
+length, slice(), split(),
+*/
 /*1) Length
 function getLength(str){
     console.log("Original string:", str);
@@ -91,13 +101,134 @@ console.log(str.replace("world","javascript"));
 
 */
 
+// // trim
+// function trimString(str) {
+//   console.log("Original String:", str);
+//   console.log("After trim:", str.trim());
+// }
+// trimString(" Hello World ");
+
+//toString:- this is used to make an array an string
+
+//// toUpperCase
+// function toUpper(str) {
+//   console.log("Original String:", str);
+//   console.log("After toUpperCase:", str.toUpperCase());
+// }
+// toUpper("Hello World");
+
+// toLowerCase
+// function toLower(str) {
+//   console.log("Original String:", str);
+//   console.log("After toLowerCase:", str.toLowerCase());
+// }
+// toLower("Hello World");
 
 
 
+//***/ 02-Numbers => parsrInt => parseFloat
+
+// parseInt:- it is a global function that can be called anytime anywhere in js
+// parseInt converts an string to integre
+// console.log(parseInt("42")); // from "42" to 42;
+
+// function explainParseInt(value){
+//   console.log("Original value:", value);
+//   let result = parseInt(value);
+//   console.log("After parseInt:", result);
+// }
+// explainParseInt("45px"); 
+// explainParseInt("45%");
+// explainParseInt("45$");//anything at the ending =>converted
+// explainParseInt("$45");//anything at the starting => not convert
+// explainParseInt("3.141592653");
+
+
+// parseFloat :  accept a string and convert it into a floating-point number
+// console.log(parseFloat("201px"));
+
+// function explainParseFloat(value) {
+//   console.log("Original Value:", value);
+//   let result = parseFloat(value);
+//   console.log("After parseFloat:", result);
+// }
+
+// // Example Usage for parseFloat
+// explainParseFloat("3.14");
+// explainParseFloat("42");
+// explainParseFloat("42px");
 
 
 
+//**03-Arrays:-
+
+// Array handbook
+
+// Array:   push(), pop(), shift(), unshift(), splice(), slice(),
+// concat(), forEach(), map(), filter(), reduce(), find(), sort()
 
 
+//**1)push:- element elements at the end.
+// const initialArray = [1, 2, 3];
+// initialArray.push(4)
+// console.log(initialArray);//[1, 2, 3, 4,];
 
+// function pushEample(arr,element) {
+//   console.log("original Array:", arr);
 
+//   arr.push(element);
+//   console.log("After push", arr);
+// }
+// pushEample([1,2,3],4);//=>[ 1, 2, 3, 4 ]
+
+//**2) pop:- delete elements from ending
+// const initialArray = [1,2,3,4];
+// initialArray.pop();// this has to be empty(maybe).
+// console.log(initialArray);//[ 1, 2, 3 ]
+
+// function popExample(arr) {
+//   console.log("Original Array:", arr);
+
+//   arr.pop();
+//   console.log("After pop",arr);
+// }
+// popExample([1,2,3,4,5]);//After pop [ 1, 2, 3, 4 ]
+
+//*3) shift: same as pop but from front
+// const inintialArray = [1,2,3,4,5];
+// inintialArray.shift();
+// console.log(inintialArray);//[ 2, 3, 4, 5 ]
+
+// function shiftExample(arr){
+//   console.log("oroginal Array:", arr);
+
+//   arr.shift();
+//   console.log("After shift", arr);
+// }
+// shiftExample([1,2,3,4,5]);
+
+//*4) unnshift: same as push but from front
+// const intialArray = [1,5,2,3,4];
+// intialArray.unshift(1,10,0);
+// console.log(intialArray);
+
+// function unshiftExample(arr,element){
+//   console.log("Original array:", arr);
+//   arr.unshift(element);
+//   console.log("After unshift:", arr);
+// }
+// unshiftExample([1,2,3,4], 10,20 );
+
+//*5) concat()=> merges two arrays into one array
+//  const firstArray = [ 1, 2, 3, 4 ];
+//  const secondArray = [10,20,30,40];
+//  let arr3 = firstArray.concat(secondArray);
+//  console.log(arr3);
+
+function concatExample(arr1,arr2){
+  console.log("original Arrays:",arr1,arr2);
+
+  let arr3 = arr1.concat(arr2);
+  console.log("after concat:",arr3);
+}
+concatExample([1,2,3,4], [10,20,30,40]);

@@ -1,16 +1,16 @@
 /* simple primitives: variables, data types, if/else , loops- for loops
 
 
-// let first_Name = " Prince ";
-// let age = 18
-// let is_Married = true;
-// console.log("this person's name is" + first_Name +
-// "and their age is "+ age);
-// if(is_Married == true){
-//     console.log(first_Name + "is married.");
-// } else{
-//     console.log(first_Name+"is not married.");
-// }
+let first_Name = " Prince ";
+let age = 18
+let is_Married = true;
+console.log("this person's name is" + first_Name +
+"and their age is "+ age);
+if(is_Married == true){
+    console.log(first_Name + "is married.");
+} else{
+    console.log(first_Name+"is not married.");
+}
 
 
 // let answer = 0;// loops:- Q: print the sum of o to nth term?
@@ -242,19 +242,19 @@ for(let i=0; i<allUser.length;i++){
 //     console.log("hello, world:");
 // }
 
-function calculateArithmetic(a,b,arithmeticFinalFunction){
-    function arithmeticFinalFunction(a,b){
-        return a+b;
-    }
+// function calculateArithmetic(a,b,arithmeticFinalFunction){
+//     function arithmeticFinalFunction(a,b){
+//         return a+b;
+//     }
 
-    const ans = arithmeticFinalFunction(a,b)
-    return ans;
-}
-function sum(a,b){
-    return a+b;
-}
-const value = calculateArithmetic(1,2,sum);
-console.log(value);
+//     const ans = arithmeticFinalFunction(a,b)
+//     return ans;
+// }
+// function sum(a,b){
+//     return a+b;
+// }
+// const value = calculateArithmetic(1,2,sum);
+// console.log(value);
 
-setTimeout( greet , 3*1000)
+// setTimeout(greet , 3*1000)
 
